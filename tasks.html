@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Task 2</title>
+</head>
+
+<body>
+
+
+    <script>
+        console.log("Task 1");
+
+        var laptop = {
+
+            name: "hp",
+            model: "G840",
+            generation: 6,
+     
+        }
+
+        const obj = Object.keys(laptop);
+        console.log(obj);
+
+
+        console.log("\nTask 2");
+
+        var student = {
+            name: "David Rayy",
+            sclass: "VI",
+            rollno: 12
+        };
+        console.log("Before Delete",student)
+        delete student.rollno;
+        console.log("After Deleting",student);
+
+        console.log("\nTask 3");
+        
+
+        function string_to_array(a){
+            return a.trim().split(" ");
+        }
+        console.log(string_to_array("Adnan Mustafa"));
+
+        console.log("\nTask 4");
+
+        function remove_element(arr){
+            return arr.slice(3);
+        }
+        console.log(remove_element([2,3,4,5,6]));
+
+        console.log("\nTask 5");
+       
+        function sort(arr1){
+            let t = 0;
+            for( let i=0;i<arr1.length;i++){
+                for(let j=i+1;j<arr1.length;j++){
+                    if(arr1[i]>arr1[j]){
+                        t = arr1[i];
+                        arr1[i]= arr1[j];
+                        arr1[j] = t;
+                    }
+                }
+            }
+           console.log(arr1); 
+        }
+        console.log(sort([34,2,65,3,2]));
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
